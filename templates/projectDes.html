@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Eye</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<header id="mainheader">
+		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="{{url_for('home')}}">Home</a></li>
+				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
+				<li><a href="{{url_for('tool')}}">Tool</a></li>
+				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<section id="main3">
+			<h3>Model Architecture Used for Segmentation</h3>
+			<p>The model proposed in this work is based on the U-net architecture. The name of the architecture is derived from its unique design. It is an encoder-decoder type network which takes image as an input along with its ground truth, and returns the probability map of the ROI as the output. In the network, the feature maps from the convolutional layer of downsampling steps are fed to the convolutional layers of upsampling part. Moreover, the absence of fully connected layer eliminates the restrictions on the size of the input image. This facet permits the user to process images of different sizes, which is definitely an appealing trait to apply technique of deep learning on the biomedical images with high precision.</p>
+		</section>
+		<aside id="sidebar3">
+			<a href="{{url_for('static', filename='Images/unet.jpg')}}">
+				<img src="{{url_for('static', filename='Images/unet.jpg')}}" alt="U-Net Architecture" >
+			</a>
+		</aside>
+	</div>
+	<div class="container">
+		<section id="main3">
+			<h3>Modification of Groundtruth</h3>
+			<p>Different ophthalmologists mark different boundaries of the ROI, and usually datasets consist of ground truths marked by more than one expert and this is due to the uncertainty of the exact boundary of optic disc and cup. Fig.  shown depicts two such boundaries marked by two different experts on a sample image. In reality, there is no exact boundary but the disc and cup tend to fade over the range of a few pixels. This uncertainty is addressed in the proposed work, the ground truths which are fed to the network are actually not binary masks.</p>
+		</section>
+		<aside id="sidebar3">
+			<a href="{{url_for('static', filename='Images/ring of uncertainity.bmp')}}">
+				<img src="{{url_for('static', filename='Images/ring of uncertainity.bmp')}}" alt="ring of uncertainity" >
+			</a>
+		</aside>
+	</div>
+	<footer id="main-footer">
+		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+	</footer>
+</body>
+</html>

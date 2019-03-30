@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Eye</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<header id="mainheader">
+		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="{{url_for('home')}}">Home</a></li>
+				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
+				<li><a href="{{url_for('tool')}}">Tool</a></li>
+				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id="showcase">
+		<div class="container">
+			<h1>Glaucoma</h1>
+		</div>
+	</section>
+	
+	<div class="container">
+		<section id="main">
+			<p><a href="https://en.wikipedia.org/wiki/Glaucoma" target="blank">Glaucoma</a> is an ailment which causes vision loss over time and hence is referred as “silent thief of sight”. Seriousness of the issue can be estimated from the prediction that population of glaucoma affected patients might increase from 76 million in 2020 to 111.8 million in 2040. Therefore, people between 40 to 64 years of age are advised to get their eye checkup done once in 2 to 4 years, by American Academy of ophthalmology. However, such a mass screening might raise the chances of human error. Also, the scarcity of ophthalmologists is major issue. Hence, Computer-Aided Diagnostic (CAD) systems can help reducing the errors and may assist the health care experts in impartial screening of patients.<br>Glaucoma is recognized by changes in the shape and size of the optic disk and cup. It tends to change the Cup to Disk Ratio (CDR). The CDR can be calculated by taking the ratio of the vertical length of the optic cup to the vertical length of the optic disc. Presently, several imaging techniques are used such as Confocal Scanning Laser Ophtalomoscopy (CSLO), Optical Coherence Tomography (OCT), Scanning Laser Polarimetry (SLP) etc. A more economical and portable approach is to acquire fundus images using a fundus camera.  An add on advantage of using fundus camera is that, images captured from the camera can also be used to detect some other eye diseases such as age-related macular degeneration (AMD) and diabetic retinopathy (DR).</p>
+		</section>
+		<aside id="sidebar">
+			<a href="{{url_for('static', filename='Images/gl.jpg')}}">
+				<img src="{{url_for('static', filename='Images/gl.jpg')}}" alt="Glaucoma" >
+			</a>
+		</aside>
+	</div>
+	<footer id="main-footer">
+		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+	</footer>
+</body>
+</html>

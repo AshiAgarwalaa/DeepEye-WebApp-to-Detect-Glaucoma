@@ -1,0 +1,169 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+img{
+	position: center;
+}
+.clr{
+	clear:both;
+}
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.block{
+	float:left;
+	width:33.3%;
+	padding:3px 20px;
+	position: center;
+	box-sizing:border-box;
+	border: 5px #333 solid;
+	margin-bottom: 20px;
+}
+.button{
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+	border:none;
+}
+
+.button:hover{
+	background:red;
+	color:#fff;
+}
+a{
+	color:white;
+	text-decoration: none;
+	font-weight: none;
+	position: center;
+}
+
+#mainheader{
+	background-color:black;
+	color:#fff;
+	text-align: center;
+	padding: 20px;
+}
+
+#navbar{
+	background-color:#636363;
+	color:black;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+#navbar .container {
+	width: 90%;
+	padding: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#navbar a{
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+	padding-right:40px;
+}
+
+#showcase{
+	background-image:url('../Images/showcase2.jpg');
+	background-position:center right;
+	min-height:100px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+#showcase h1{
+	color:#333;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:30px;
+}
+
+#main{
+	float:left;
+	width:80%;
+	padding:0 30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+#main a{
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+}
+#main a:hover{
+	color:blue;
+}
+
+#sidebar{
+	float:right;
+	width:20%;
+	padding:10px;
+	box-sizing: border-box;
+}
+#main3{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+#sidebar3{
+	float:right;
+	width:30%;
+	padding:10px;
+	box-sizing: border-box;
+}
+#main2{
+	float:left;
+	width:60%;
+	padding:0 30px;
+	box-sizing: border-box;
+	text-align: justify;
+	margin-top: 20px;
+}
+#sidebar2{
+	float:right;
+	width:40%;
+	background: #333;
+	color:#fff;
+	padding:10px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#main-footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Eye</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<header id="mainheader">
+		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="{{url_for('home')}}">Home</a></li>
+				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
+				<li><a href="{{url_for('tool')}}">Tool</a></li>
+				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<section id="main2">
+			<ol>
+				<li><h3>Load the input image</h3></li>
+				<li><h3>Click on Predict button</h3></li>
+				<li><h3>Analyse sgmented results</h3></li>
+				<li><h3>Analyse fnal probabilities</h3></li>
+			</ol>
+		</section>
+		<aside id="sidebar2">
+			<h3>Brief Description</h3>
+			<p>The tool allows a user to input a fundus image and predict whether the given image is glaucomatic or non-glaucomatic. It works on deep neural networks and can be broadly divided in three major steps. The first and second step is to segment optic disc and optic cup respectively. The third step includes calculation of Cup-to-Disc Ratio which is then used to classify the given image. </p>
+		</aside>
+	</div>
+	<br>
+	<footer id="main-footer">
+		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+	</footer>
+</body>
+</html>

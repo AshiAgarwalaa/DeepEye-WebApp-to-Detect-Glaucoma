@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Eye</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<header id="mainheader">
+		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="{{url_for('home')}}">Home</a></li>
+				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
+				<li><a href="{{url_for('tool')}}">Tool</a></li>
+				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+			</ul>
+		</div>
+	</nav>
+	<footer id="main-footer">
+		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+	</footer>
+</body>
+</html>
