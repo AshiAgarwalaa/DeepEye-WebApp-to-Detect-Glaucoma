@@ -6,7 +6,15 @@
 </head>
 <body>
 	<header id="mainheader">
-		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+		<a href="{{url_for('static', filename='Images/AmityLogo.jpg')}}">
+			<img id="logo1" src="{{url_for('static', filename='Images/AmityLogo.jpg')}}" alt="Amity Logo" >
+		</a>
+		
+		<h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1>
+		
+		<a href="{{url_for('static', filename='Images/Logo.jpg')}}">
+			<img id="logo2" src="{{url_for('static', filename='Images/Logo.jpg')}}" alt="CST Logo" >
+		</a>		
 	</header>
 	<nav id="navbar">
 		<div class="container">
@@ -15,26 +23,34 @@
 				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
 				<li><a href="{{url_for('tool')}}">Tool</a></li>
 				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+				<li><a href="{{url_for('publications')}}">Publications</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container">
 		<section id="main2">
 			<ol>
-				<li><h3>Load the input image</h3></li>
-				<li><h3>Click on Predict button</h3></li>
-				<li><h3>Analyse sgmented results</h3></li>
-				<li><h3>Analyse fnal probabilities</h3></li>
+				<li><h3>Load the input image</h3><p>Click Browse to select the image from your computer and then click Upload to load the image.</p></li>
+				<li><h3>Click on Predict button</h3><p>Clicking on predict button will segment the optic disc and optic cup. Also it will calculate the cup-to-disc ratio (CDR) and predict whether the input image is glaucomatic or healthy.</p></li>
 			</ol>
+			<br>
+			<h3> Flowchart of the procedure: </h3>
 		</section>
 		<aside id="sidebar2">
-			<h3>Brief Description</h3>
+			<h3 style="text-align: center;">Brief Description</h3>
 			<p>The tool allows a user to input a fundus image and predict whether the given image is glaucomatic or non-glaucomatic. It works on deep neural networks and can be broadly divided in three major steps. The first and second step is to segment optic disc and optic cup respectively. The third step includes calculation of Cup-to-Disc Ratio which is then used to classify the given image. </p>
 		</aside>
 	</div>
 	<br>
+	<div class="container">
+		<a href="{{url_for('static', filename='Images/flowchart1.jpg')}}">
+			<img  src="{{url_for('static', filename='Images/flowchart2.jpg')}}" alt="Flowchart" >
+		</a>
+	</div>
+	<br>
 	<footer id="main-footer">
-		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: left;">Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: right;">Crafted By: Ashi Agarwal</p>
 	</footer>
 </body>
 </html>

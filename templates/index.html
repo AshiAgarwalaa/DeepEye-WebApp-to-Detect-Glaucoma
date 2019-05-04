@@ -6,7 +6,15 @@
 </head>
 <body>
 	<header id="mainheader">
-		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+		<a href="{{url_for('static', filename='Images/AmityLogo.jpg')}}">
+			<img id="logo1" src="{{url_for('static', filename='Images/AmityLogo.jpg')}}" alt="Amity Logo" >
+		</a>
+		
+		<h1> DEEP EYE: A WEB APP TO DETECT GLAUCOMA </h1>
+		
+		<a href="{{url_for('static', filename='Images/Logo.jpg')}}">
+			<img id="logo2" src="{{url_for('static', filename='Images/Logo.jpg')}}" alt="CST Logo" >
+		</a>		
 	</header>
 	<nav id="navbar">
 		<div class="container">
@@ -15,6 +23,7 @@
 				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
 				<li><a href="{{url_for('tool')}}">Tool</a></li>
 				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+				<li><a href="{{url_for('publications')}}">Publications</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -35,7 +44,8 @@
 		</aside>
 	</div>
 	<footer id="main-footer">
-		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: left;">Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: right;">Crafted By: Ashi Agarwal</p>
 	</footer>
 </body>
 </html>

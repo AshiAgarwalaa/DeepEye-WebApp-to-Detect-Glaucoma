@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep Eye</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<header id="mainheader">
+		<a href="{{url_for('static', filename='Images/AmityLogo.jpg')}}">
+			<img id="logo1" src="{{url_for('static', filename='Images/AmityLogo.jpg')}}" alt="Amity Logo" >
+		</a>
+		
+		<h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1>
+		
+		<a href="{{url_for('static', filename='Images/Logo.jpg')}}">
+			<img id="logo2" src="{{url_for('static', filename='Images/Logo.jpg')}}" alt="CST Logo" >
+		</a>		
+	</header>
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="{{url_for('home')}}">Home</a></li>
+				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
+				<li><a href="{{url_for('tool')}}">Tool</a></li>
+				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+				<li><a href="{{url_for('publications')}}">Publications</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h3 style="text-align: center;">Preious Publications of the Author:</h3>
+		<ol>
+			<li><h4>Improved OPtic Disc and Cup Segmentation in Glaucomatic Images Using Deep Learning Architecture, Communicated with journal of repute, 2018.</h4></li>
+			<li><h4>Automated Skin Lesion Segmentation using K-Means Clustering from digital Dermoscopic Images, TSP17, published in IEEE Digital Library (July 5-7, 2017), Barcelona, Spain.</h4></li>
+			<li><h4>Automated Computer Vision Method for lesion Segmentation from Digital Dermoscopic Images, 4th UPCON 2017, published in IEEE Digital Library (October 26-28, 2017).</h4></li>
+			<li><h4>A Region Growing Based Imaging method for Lesion Segmentation from Dermoscopic Images, 4th UPCON 2017, published in IEEE Digital Library (October 26-28, 2017).</h4></li>
+			<li><h4>Automatic Imaging Method for Optic Disk Segmentation using Morphological Techniques and Active Contour Fitting, 9th IC3, published in IEEE Digital Library (August 11-13, 2016).</h4></li>
+			
+		</ol>
+	</div>
+	<br>
+	<div class="container">
+		<h2>Team Members:</h2>
+	</div>
+	<div class="container">
+		<div class="pic1">
+			<a href="{{url_for('static', filename='Images/Ashi.jpg')}}">
+				<img id="logo1" src="{{url_for('static', filename='Images/Ashi.jpg')}}" alt="Amity Logo" >
+			</a>
+		</div>
+		<div class="about">
+			<p style="text-align: justify;">Ashi Agarwal (left) is the final year student of Bachelors in Technology, Electronics and Communication, 2015-19, Amity University, NOIDA. Her research interests include Biomedical Image and Signal Processing, Machine larning and Deep Learning. <br><br>Dr. Partha Sarathhi Mangipudi (Right) is acting on the post of professor in Department of Electronics and Communication, Amity University, Noida. His Research Interest includes Digital Image Processing, Digital Signal Processing, Artificial Intelligence and Applications.</p>
+		</div>
+		<div class="pic2">
+			<a href="{{url_for('static', filename='Images/ParthaSir.jpg')}}">
+				<img id="logo2" src="{{url_for('static', filename='Images/ParthaSir.jpg')}}" alt="CST Logo" >
+			</a>
+		</div>
+	</div>
+	<br>
+	<footer id="main-footer">
+		<p style="float: left;">Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: right;">Crafted By: Ashi Agarwal</p>
+	</footer>
+</body>
+</html>

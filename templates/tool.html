@@ -6,7 +6,15 @@
 </head>
 <body>
 	<header id="mainheader">
-		<div class="container"><h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1></div>		
+		<a href="{{url_for('static', filename='Images/AmityLogo.jpg')}}">
+			<img id="logo1" src="{{url_for('static', filename='Images/AmityLogo.jpg')}}" alt="Amity Logo" >
+		</a>
+		
+		<h1>DEEP EYE: A WEB APP TO DETECT GLAUCOMA</h1>
+		
+		<a href="{{url_for('static', filename='Images/Logo.jpg')}}">
+			<img id="logo2" src="{{url_for('static', filename='Images/Logo.jpg')}}" alt="CST Logo" >
+		</a>		
 	</header>
 	<nav id="navbar">
 		<div class="container">
@@ -15,6 +23,7 @@
 				<li><a href="{{url_for('instruction')}}">Instructions</a></li>
 				<li><a href="{{url_for('tool')}}">Tool</a></li>
 				<li><a href="{{url_for('pro_dis')}}">Project Description</a></li>
+				<li><a href="{{url_for('publications')}}">Publications</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -26,35 +35,45 @@
 	    <p></p>
 		<p>Click on Predict button to get the final results</p>
 		<!--<a class="button" href="#">Browse</a>-->
-		<a class="button" href="#">Predict</a>
+		<a class="button" href="{{url_for('predict')}}">Predict</a>
 	</div>
-	<br>
 	<div class="clr"></div>
-	<div class="block container">
-		<h4>Input Image</h4>
-		<a href="{{url_for('static', filename='Images/input.jpg')}}">
-			<img src="{{url_for('static', filename='Images/input.jpg')}}" alt="Input Image" >
-		</a>
-	</div>
-	<div class="block container">
-		<h4>Segmented OD</h4>
-		<a href="{{url_for('static', filename='Images/od.jpg')}}">
-			<img src="{{url_for('static', filename='Images/od.jpg')}}" alt="Optic Disc" >
-		</a>
-	</div>
-	<div class="block  container">
-		<h4>Segmented OC</h4>
-		<a href="{{url_for('static', filename='Images/oc.jpg')}}">
-			<img src="{{url_for('static', filename='Images/oc.jpg')}}" alt="Optic Cup" >
-		</a>
+	<br>
+	<div class="container">
+		
+		<div class="block">
+			<h4>Input Image</h4>			
+			<a href="{{url_for('static', filename='Images/input.jpg')}}">
+				<img src="{{url_for('static', filename='Images/input.jpg')}}" alt="Input Image" >
+			</a>
+		</div>
+		<div class="block">
+			<h4>Segmented OD</h4>			
+			<a href="{{url_for('static', filename='Images/od.jpg')}}">
+				<img src="{{url_for('static', filename='Images/od.jpg')}}" alt="Optic Disc" >
+			</a>
+		</div>
+		<div class="block">
+			<h4>Segmented OC</h4>
+			<a href="{{url_for('static', filename='Images/oc.jpg')}}">
+				<img src="{{url_for('static', filename='Images/oc.jpg')}}" alt="Optic Cup" >
+			</a>
+		</div>
+		<p>Note*: The Image Dimensions are 128*128</p>	
 	</div>	
 	<br>
-	<h4>The probabilities for the given image are: </h4>
-	<h5>Glaucomatic: </h5>
-	<h5>Non-Glaucomatic: </h5>
+	<div class="container">
+		<h4>The probability for the given patient is: {{var}}</h4>		
+		<h4>Calculated diameter for optic disc: {{od}}</h4>	
+		<h4>Calculated diameter for optic cup: {{oc}}</h4>
+		<h4>Calculated cup-to-disc ratio: {{cdr}}</h4>		
+	</div>
+	
+	
 	<div class="clr"></div>
 	<footer id="main-footer">
-		<p>Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: left;">Project funded by Council of Science and Technology, Uttar Pradesh Govt.</p>
+		<p style="float: right;">Crafted By: Ashi Agarwal</p>
 	</footer>
 </body>
 </html>
